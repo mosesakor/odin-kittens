@@ -1,0 +1,7 @@
+<div>
+  <% @kittens.each do |kitten|%>
+    <p> <%= kitten.name %> </p> <span> <%= link_to 'Destroy', kitten_path(kitten),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %> </span>
+  <% end %>
+</div>
